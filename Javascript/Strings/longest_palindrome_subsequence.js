@@ -58,3 +58,33 @@ function longestPalindrome(str) {
 
 //longestPalindrome('forgeeksskeegfor')
 //longestPalindrome('abcdcbabc')
+
+// o(n^2) time and 0(1) space
+// function longestPalindromicStr(s){
+//   if(s.length <= 0){
+//     return s;
+//   }
+
+//   var longest = s.substring(0,1);
+//   for(let i=0; i<s.length; i++){
+//     var result = helper(s,i,i);
+//     if(result.length > longest.length){
+//       longest = result;
+//     }
+//     result = helper(s, i, i+1);
+//     if(result.length > longest.length){
+//       longest = result;
+//     }
+//   }
+//  return longest;
+// }
+
+// function helper(str, begin, end){
+//   while(begin >=0 && end <= str.length-1 && str.charAt(begin) === str.charAt(end)){
+//     begin--;
+//     end++;
+//   }
+//   return str.substring(begin+1,end);
+// }
+
+// longestPalindromicStr("forgeeksskeegfor");
