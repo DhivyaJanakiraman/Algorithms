@@ -6,6 +6,9 @@ function longestCommonSub(str1, str2) {
   if (str1 === null || str2 === null) {
     return 0;
   }
+  if (str1 === str2) {
+    return str1;
+  }
   var sub = str2.slice();
   var length = str2.length;
   var longestCommon = str2[0];

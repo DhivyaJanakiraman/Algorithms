@@ -1,3 +1,6 @@
+// Time complexity: factorial times
+// Space complexity: O(n)
+
 function permutations(str) {
   var map = {};
   for (let i = 0; i < str.length; i++) {

@@ -1,5 +1,5 @@
 // reverse an array without affecting special characters
-
+// time complelxity: O(n) space: O(1)
 function reverseArr(arr) {
   arr = arr.split("");
   var start = 0;
