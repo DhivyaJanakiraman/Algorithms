@@ -3,12 +3,11 @@ function countChar(str) {
   var count = 1;
   var curr = str[0];
   for (let i = 0; i < str.length; i++) {
+    curr = str[i];
     if (str[i] === str[i + 1]) {
-      curr = str[i];
       count++;
     } else {
       result += curr + count;
-      curr = str[i + 1];
       count = 1;
     }
   }

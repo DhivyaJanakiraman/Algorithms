@@ -23,16 +23,16 @@ function printSubSeq(input) {
   printSubSeqHelper(str, count, 0, output, 0);
 }
 
-function printSubSeqHelper(str, count, pos, output, index) {
-  printArr(output, index);
+function printSubSeqHelper(str, count, pos, output, len) {
+  printArr(output, len);
 
   for (let i = pos; i < str.length; i++) {
     if (count[i] === 0) {
       continue;
     }
-    output[index] = str[i];
+    output[len] = str[i];
     count[i]--;
-    printSubSeqHelper(str, count, i, output, index + 1);
+    printSubSeqHelper(str, count, i, output, len + 1);
     count[i]++;
   }
 }
@@ -41,7 +41,7 @@ function printArr(arr, len) {
   var resultStr = "";
   for (let i = 0; i < len; i++) {
     resultStr += arr[i];
-  }
+  } 
   console.log(resultStr);
 }
 

@@ -30,3 +30,4 @@ function findWrongParenthesis(str) {
 
 findWrongParenthesis("{((()}]");
 // Input "({((()}])" output: 3
+

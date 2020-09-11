@@ -18,3 +18,25 @@ function compressString(str) {
   result = result + (Object.keys(map)[0] + Object.values(map)[0]);
   return result.length > str.length ? str : result;
 }
+
+
+// method 2 without using map
+
+// function compressString(str) {
+//   let resultStr = "";
+//   let count = 0;
+ 
+//   for(let i=0; i<str.length; i++){
+//     let currChar = str[i]; 
+//     let nextChar = str[i+1];
+ 
+//     if(nextChar && (currChar === nextChar)){
+//       count += 1;
+//     } else {
+//       resultStr += (currChar + (count+1));
+//       count = 0;
+//     } 
+//   }
+ 
+//   return resultStr.length > str.length ? str : resultStr;
+//  }

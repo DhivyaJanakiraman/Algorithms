@@ -22,3 +22,33 @@ function reverseArr(arr) {
 }
 
 reverseArr("a,b$c");
+
+
+// function reverseArr(arr) {
+//   arr = arr.split("");
+//   var start = 0;
+//   var end = arr.length - 1;
+//   var lettersRegex = /[a-z]/gi;
+//   var result = [];
+
+//   while (start <= end) {
+//     if (s[start].match(lettersRegex) !== null && s[end].match(lettersRegex) !== null) {
+//       result[start] = s[end];
+//       result[end] = s[start];
+//       start++;
+//       end--;
+//     } else if (s[start].match(lettersRegex) !== null && s[end].match(lettersRegex) === null) {
+//       result[end] = s[end];
+//       end--;
+//     } else if (s[start].match(lettersRegex) === null && s[end].match(lettersRegex) !== null) {
+//       result[start] = s[start];
+//       start++;
+//     } else {
+//       result[start] = s[start];
+//       result[end] = s[end];
+//       start++;
+//       end--;
+//     }
+//   }
+//   return result;
+// }

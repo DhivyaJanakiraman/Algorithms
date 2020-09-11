@@ -24,3 +24,24 @@ var productExceptSelf = function(nums) {
 };
 
 productExceptSelf([1, 2, 3, 4]);
+
+
+// alternate
+
+// var productExceptSelf = function(nums) {
+//   var result = [];
+//   var product = null;
+
+//   for(let i=0; i<nums.length; i++){
+//     product = 1;
+//     for(let j=0; j<nums.length; j++){
+//       if(i === j){
+//         continue;
+//       } else {
+//         product = product * nums[j];
+//       }
+//     }
+//     result.push(product);
+//   }
+//   return result;
+// };

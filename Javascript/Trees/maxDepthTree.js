@@ -17,3 +17,10 @@ var maxDepth = function(root) {
   var rDepth = maxDepth(root.right);
   return 1 + Math.max(lDepth, rDepth);
 };
+
+
+//     5
+//   /   \
+//  3      7
+// / \ 
+// 2  4

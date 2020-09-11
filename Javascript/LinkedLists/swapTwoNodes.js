@@ -5,7 +5,7 @@ function swapNodes(A, B, head) {
   var prevA = null;
   var currA = head;
 
-  while (currA != null && currA.val !== A) {
+  while (currA != null && currA.val !== A) {//A.val
     prevA = currA;
     currA = currA.next;
   }
